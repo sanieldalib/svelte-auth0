@@ -6,7 +6,9 @@ declare type Auth0ContextProps = {
   /** The Auth0 domain. */
   domain: string
   /** The Auth0 client ID. */
-  client_id: string
+  client_id: string,
+  /** Store tokens in local storage by setting the cacheLocation property to localstorage. */
+  cacheLocation?: string,
   /** The default audience to be used for requesting API access. */
   audience?: string
   /**
